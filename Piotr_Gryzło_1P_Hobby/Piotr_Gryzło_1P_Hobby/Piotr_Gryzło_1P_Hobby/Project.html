@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="contact" content="Piotr.gryzlo@zse.krakow.pl">
+<meta name="description" content="Strona o moich pasjach: modelowanie 3D, animowanie 2D i 3D oraz programowanie.">
+<meta name="keywords" content="pasja, modelowanie 3D, animowanie, programowanie, Roblox Studio">
+<meta name="author" content="Piotr Gryzło">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="Img/RobloxStudio.png" type="image/x-icon">
+<title>Pasja</title>
+</head>
+<body>
+    <header class="HeaderBar">
+        <nav>
+            <div class="Logo">
+                <img src="Img/RobloxStudio.png" alt="Img1">
+            </div>
+
+            <div class="Menu">
+                <a href="Main.html">Strona Główna</a>
+                <a href="Info.html">O Mnie</a>
+                <a href="Project.html">Projekt</a>
+                <a href="Formularz.html">Formularz</a>
+                <a href="Kontakt.html">Kontakt</a>
+            </div>
+
+            <div class="Block"></div>
+        </nav>
+    </header>
+<main>
+    <div class="content-wrapper-project">
+        <div class="HeaderBox">
+            <div class="HeaderBox-Text">
+                <h1>Co robi ten skrypt?</h1>
+
+                <p>Skrypt zarządza animacjami i ruchem postaci gracza w Roblox Studio. Zastępuje domyślny system animacji własnym, 
+                który dostosowuje prędkość chodzenia i pochylenie postaci w zależności od kierunku ruchu.</p>
+            </div>
+             </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Inicjalizacja</h2><br><br>
+
+                <p>Na początku skrypt pobiera kluczowe elementy postaci: 
+                Humanoid, Animator oraz HumanoidRootPart. 
+                Następnie usuwa domyślny skrypt Animate Robloxa i zatrzymuje wszystkie aktywne animacje, przejmując 
+                pełną kontrolę.</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part1.png" alt="Img1">
+            </div>
+            </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Konfiguracja prędkości</h2><br><br>
+
+                <p>Skrypt definiuje różne wartości prędkości zależnie od kierunku: do przodu, 
+                do tyłu, na boki oraz wartości pośrednie dla ruchów po skosie. Przejście między prędkościami jest płynne.</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part2.png" alt="Img2">
+            </div>
+  
+            </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Pochylenie postaci</h2><br><br>
+
+                <p>Skrypt dynamicznie oblicza kąt nachylenia 
+                    tułowia na podstawie kierunku ruchu. Dzięki manipulacji złączem RootJoint,
+                     postać realistycznie reaguje na siłę odśrodkową i bezwładność, 
+                    wychylając się w stronę ruchu. Wszystkie 
+                    przejścia kątowe są wygładzane funkcją Lerp, co zapobiega szarpnięciom.</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part3.png" alt="Img2">
+            </div>
+  
+            </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Zarządzanie Animacjami</h2><br><br>
+
+                <p>System w pełni zastępuje domyślny moduł animacji Robloxa. Skrypt inteligentnie 
+                    przełącza się między stanami Idle (odpoczynek) a Walk (ruch). Dodatkowo, tempo
+                     odtwarzania animacji chodzenia jest dynamicznie skalowane, im szybciej postać się porusza, 
+                     tym szybciej przebiera nogami,
+                     co eliminuje efekt ślizgania się po podłożu.</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part4.png" alt="Img2" >
+            </div>
+  
+            </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Logika Kierunkowa</h2><br><br>
+
+                <p>Wykorzystując zaawansowaną matematykę wektorów (VectorToObjectSpace), 
+                    skrypt rozpoznaje precyzyjny kierunek poruszania się względem orientacji 
+                    postaci. Pozwala to na unikalne zachowania, takie jak spowolnienie ruchu przy 
+                    chodzeniu 
+                    tyłem oraz specyficzne pochylenia przy biegach diagonalnych (na ukos).</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part5.png" alt="Img2" >
+            </div>
+  
+            </div>
+        <div class="box" >
+            <div class="Info-Text">
+                <h2>Finał i Start Systemu</h2><br><br>
+
+                <p>Ta część kodu dba o to, aby postać wróciła do swojej
+                     naturalnej postawy po usunięciu skryptu oraz aktywuje system w czasie rzeczywistym. 
+                     Dzięki zdarzeniu Heartbeat,
+                     obliczenia są wykonywane w każdej klatce obrazu, co gwarantuje najwyższą płynność ruchu.</p>
+            </div>
+            <div class="Info-Img">
+                <img src="Img/Part6.png" alt="Img2" >
+            </div>
+  
+            </div>
+    </div>
+            <a href="Doc/Kod_Projekt.pdf" download class="buttonStyle">
+                    Zobacz Cały Kod.
+            </a>
+</main>
+<footer>
+    <p>Autor: Piotr Gryzło</p>
+</footer>
+</body>
+</html>

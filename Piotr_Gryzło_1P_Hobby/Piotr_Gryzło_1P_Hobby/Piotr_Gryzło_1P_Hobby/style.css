@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: #0f0f0f;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Logo img{
+   height: 35px;
+   width: auto;
+}
+
+.HeaderBar {
+    background-color: black;
+    border-bottom: 2px solid #00a2ff;
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    height: 70px;
+}
+
+.HeaderBar nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 90%;
+    justify-content: space-between;
+}
+
+.Menu {
+    display: flex;
+    gap: 25px;
+}
+
+.Menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: 1.3rem;
+}
+
+.Menu a:hover {
+    color: #00a2ff;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.content-wrapper, .content-wrapper-project {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.left, .right {
+    flex: 1;
+    min-width: 500px;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    text-align: center;
+}
+
+input {
+    background-color: #222;
+    border-radius: 15px;
+    border: 1px solid #333;
+    min-height: 4vh;
+    color: white;
+    padding: 5px;
+    
+}
+input:focus {
+    outline: none;
+}
+
+textarea {
+  min-height: 100px; 
+  max-height: 300px; 
+  resize: vertical;  
+  background-color: #222;
+  border-radius: 15px;
+  border: 1px solid #333;
+  color: white;
+  padding: 5px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.SubmitButton{
+    border-radius: 12px;
+    background-color: #00a2ff;
+    color: white;
+    border: 1px solid #047bc0ba;
+    min-height: 30px;
+    transition: 0.4s;
+}
+
+.SubmitButton:hover{
+    transform: translateY(-3px);
+}
+
+
+
+
+.text p{ 
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.text h1{
+    font-size: 2.2rem;
+    color: #00a2ff;
+    margin-bottom: 15px;
+}
+
+.text h2{
+    color: #00a2ff;
+    margin: 15px 0 5px 0;
+}
+
+.buttonStyle {
+    display: inline-block;
+    background-color: #00a2ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+
+.buttonStyle:hover{
+    transform: translateY(-3px);
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    color: #666;
+    border-top: 1px solid #222;
+    font-size: 0.9rem;
+}
+
+.HeaderBox {
+    width: 100%;
+    background-color: #161616;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+.HeaderBox h1{
+    font-size: 1.8rem;
+    color: #00a2ff;
+    margin-bottom: 5px;
+}
+
+.HeaderBox p {
+    color: #aaa;
+    font-size: 0.95rem;
+}
+
+.HeaderBox:hover{
+    border: 1px solid #00a2ff;
+}
+
+.box:hover{
+    border: 1px solid #00a2ff;
+    transform: translateY(-3px);
+}
+
+.box {
+    max-width: 630px; 
+    background-color: #161616;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.Info-Text p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.Info-Text {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.Info-Text h2 {
+    font-size: 1.2rem;
+    color: #00a2ff;
+    margin-bottom: 5px;
+}
+
+.Info-Img img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+#blue {
+    color: #00a2ff;
+}
+
+
+@media (max-width: 750px) {
+    .left, .right, .box {
+        min-width: 100%;
+    }
+    .headerbar nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Menu a{
+        font-size: 0.6rem;
+}
+}
