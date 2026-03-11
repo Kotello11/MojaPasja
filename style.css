@@ -16,7 +16,6 @@ body {
     flex-direction: column;
 }
 
-
 .Logo img{
    height: 35px;
    width: auto;
@@ -73,8 +72,6 @@ main {
     gap: 20px;
 }
 
-
-
 .left, .right {
     flex: 1;
     min-width: 500px;
@@ -128,9 +125,6 @@ textarea:focus {
 .SubmitButton:hover{
     transform: translateY(-3px);
 }
-
-
-
 
 .text p{ 
     color: #ccc;
